@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+
+
+
+		
+		
+<style>
+/*#portamento_container {
+	float:right;
+	position:relative;
+}
+#portamento_container #ejemplo {
+	float:none;
+	position:absolute;
+}
+#portamento_container #ejemplo.fixed {
+	position:fixed;
+}*/
+</style>
+
+<style>
+			#wrapper {overflow: hidden;}
+			#content {width:486px; margin-right:10px; float:left; min-height:1200px;}
+			#ejemplo {width:284px; padding:10px; background: #eee; float:right; height:400px;}
+			
+			#portamento_container {float:right; position:relative;} /* take the positioning of the sidebar, and become the start point for the sidebar positioning */
+			#portamento_container #ejemplo {float:none; position:absolute;} /* no need to float anymore, become absolutely positoned */
+			#portamento_container #ejemplo.fixed {position:fixed;} /* if the panel is sliding, it needs position:fixed */
+		</style>
+		
+</head>
+<body>
+<div>
+			<header>
+				<h1><a href="http://simianstudios.com/portamento/">Portamento</a> Demo</h1>
+			</header>
+			
+			<div id="wrapper">
+				<div id="content">
+					<p>This shows <a href="http://simianstudios.com/portamento/">Portamento</a>'s default behaviour - no bottom boundary and a 10px gap from the top of the viewport.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+					<p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
+								
+				</div>
+				
+				<div id="ejemplo" style="background-color:#03F;">
+					<p>Hello, I'm a sliding panel - unless the viewport is too small to contain my full glory, in which case I will stay right here so users can see all of me.</p>
+				</div>
+			</div>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+-->
+<script src="assets/js/jquery.min.js">
+</script>
+		<script src="assets/js/portamento.js"></script>
+        <script>
+			$(document).ready(function() {
+				$('#ejemplo').portamento();	
+			});	
+		</script>
+			<footer>
+				<p>The sliding panel can cross the red line, as there is no bottom boundary.</p>
+				<p><small>Demo of <a href="http://simianstudios.com/portamento/">Portamento</a> by Kris Noble 2011. Tasty filler text by <a href="http://baconipsum.com">Bacon Ipsum</a>.</small></p>
+			</footer>
+		</div>
+<!--<div id="ejemplo">
+<p>Este es un ejemplo!</p>
+</div>-->
+</body>
+
+</html>

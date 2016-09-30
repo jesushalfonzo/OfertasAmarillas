@@ -1,0 +1,488 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 23-05-2016 a las 06:54:44
+-- Versión del servidor: 10.1.13-MariaDB
+-- Versión de PHP: 7.0.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `db_amarillas`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `bitacora_acceso`
+--
+
+CREATE TABLE `bitacora_acceso` (
+  `b_acceso_id` int(11) NOT NULL,
+  `b_acceso_usuario` varchar(200) NOT NULL,
+  `b_acceso_accion` varchar(200) NOT NULL,
+  `b_acceso_ip` varchar(200) NOT NULL,
+  `b_acceso_fecha` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `bitacora_acceso`
+--
+
+INSERT INTO `bitacora_acceso` (`b_acceso_id`, `b_acceso_usuario`, `b_acceso_accion`, `b_acceso_ip`, `b_acceso_fecha`) VALUES
+(1, 'jalfonzo', 'ACCESO PERMITIDO', '', '0000-00-00 00:00:00'),
+(2, 'jalfonzo', 'ACCESO PERMITIDO', '', '0000-00-00 00:00:00'),
+(3, 'jalfonzo', 'ACCESO PERMITIDO', '', '0000-00-00 00:00:00'),
+(4, 'jalfonzo', 'ACCESO PERMITIDO', '', '0000-00-00 00:00:00'),
+(5, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:28:00'),
+(6, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:28:31'),
+(7, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:31:02'),
+(8, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:31:28'),
+(9, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:31:40'),
+(10, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:33:06'),
+(11, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:35:14'),
+(12, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:35:29'),
+(13, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:46:45'),
+(14, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:53:07'),
+(15, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:53:28'),
+(16, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:53:49'),
+(17, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:54:08'),
+(18, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:55:11'),
+(19, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:56:35'),
+(20, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:56:53'),
+(21, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:57:02'),
+(22, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:59:05'),
+(23, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:59:22'),
+(24, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 12:59:40'),
+(25, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 13:01:09'),
+(26, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 14:16:33'),
+(27, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 14:33:01'),
+(28, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 14:33:50'),
+(29, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 14:35:03'),
+(30, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 14:35:43'),
+(31, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 16:46:52'),
+(32, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 17:01:59'),
+(33, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 17:03:37'),
+(34, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-28 17:06:03'),
+(35, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-29 09:26:29'),
+(36, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-04-29 14:27:55'),
+(37, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-02 09:13:16'),
+(38, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-02 10:21:10'),
+(39, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-02 11:44:05'),
+(40, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-02 12:43:04'),
+(41, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-02 14:30:45'),
+(42, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-02 15:09:59'),
+(43, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-02 16:12:09'),
+(44, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-03 08:51:11'),
+(45, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-03 10:06:35'),
+(46, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-03 13:59:01'),
+(47, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:31:24'),
+(48, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:34:02'),
+(49, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:37:02'),
+(50, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:38:49'),
+(51, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:41:10'),
+(52, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:41:37'),
+(53, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:42:33'),
+(54, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:43:56'),
+(55, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:45:15'),
+(56, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:45:33'),
+(57, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 08:45:42'),
+(58, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 09:43:43'),
+(59, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 11:17:23'),
+(60, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 11:29:11'),
+(61, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 11:29:40'),
+(62, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 11:30:10'),
+(63, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-04 14:36:48'),
+(64, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-05 11:56:54'),
+(65, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-05 15:48:48'),
+(66, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-06 08:58:36'),
+(67, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-06 14:47:28'),
+(68, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-06 15:46:38'),
+(69, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-10 14:09:38'),
+(70, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-10 14:18:39'),
+(71, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-11 09:35:13'),
+(72, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-11 09:36:06'),
+(73, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-11 09:36:49'),
+(74, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-11 09:37:45'),
+(75, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-12 12:43:59'),
+(76, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-12 13:40:42'),
+(77, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-12 15:06:57'),
+(78, 'jalfonzo', 'ACCESO PERMITIDO', '127.0.0.1', '2016-05-13 10:53:13');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `m_acciones`
+--
+
+CREATE TABLE `m_acciones` (
+  `m_acciones_id` int(4) NOT NULL,
+  `m_acciones_nombre` varchar(100) NOT NULL,
+  `m_acciones_descripcion` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `m_acciones`
+--
+
+INSERT INTO `m_acciones` (`m_acciones_id`, `m_acciones_nombre`, `m_acciones_descripcion`) VALUES
+(1, 'Agregar', 'Para cargar nuevos pacientes'),
+(2, 'Ver', 'Para listar'),
+(3, 'Editar', 'Permite hacer ediciones'),
+(4, 'Eliminar', 'Permite eliminar de la base de datos');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `m_categorias`
+--
+
+CREATE TABLE `m_categorias` (
+  `m_categoria_id` int(11) NOT NULL,
+  `m_categoria_nombre` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `m_categoria_descripcion` tinytext COLLATE utf8_unicode_ci NOT NULL,
+  `m_categoria_estatus` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `m_categorias`
+--
+
+INSERT INTO `m_categorias` (`m_categoria_id`, `m_categoria_nombre`, `m_categoria_descripcion`, `m_categoria_estatus`) VALUES
+(1, 'Hogar', 'dsfsdf', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `m_clientes`
+--
+
+CREATE TABLE `m_clientes` (
+  `m_cliente_id` int(11) NOT NULL,
+  `m_cliente_razonSocial` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `m_cliente_rif` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `m_cliente_mail` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `m_cliente_telefono` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `m_cliente_nombreContacto` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `m_cliente_telefonoContacto` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `m_cliente_login` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `m_cliente_password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `m_cliente_estatus` int(11) NOT NULL,
+  `m_cliente_verificado` int(11) NOT NULL,
+  `m_cliente_fecharegistro` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `m_clientes`
+--
+
+INSERT INTO `m_clientes` (`m_cliente_id`, `m_cliente_razonSocial`, `m_cliente_rif`, `m_cliente_mail`, `m_cliente_telefono`, `m_cliente_nombreContacto`, `m_cliente_telefonoContacto`, `m_cliente_login`, `m_cliente_password`, `m_cliente_estatus`, `m_cliente_verificado`, `m_cliente_fecharegistro`) VALUES
+(3, 'LarryCapinga C.A', 'V-17955911-1', 'jesushalfonzo@gmail.com', '00584125541104', 'Jes&uacute;s Alfonzo', '00584264011816', 'jalfonzo', '+uMgkucq9&gt;&gt;(zcd', 1, 0, '2016-05-03 15:08:04'),
+(4, 'NenucoFilia S.A', 'V-17955911-0', 'jvalera@gmail.com', '00584125541104', 'Johan Valera', '00584264011816', 'jalfonzo', 'o#t0Ibel7wia512', 1, 1, '2016-05-03 15:13:01'),
+(5, 'ElBizarro C.A', 'V-17955911-2', 'castro@gmail.com', '00584125541104', 'Eduard Castro', '00584264011816', 'jalfonzo2', 'kq8ibu75*uDHulh', 1, 0, '2016-05-04 10:03:10'),
+(6, 'MaquillajesyMaricuras C.A', 'V-17955911-3', 'jashet@gmail.com', '00584125541104', 'Jashet Villegas', '00584264011816', 'jalfonzo3', 'kq8ibu75*uDHulh', 0, 1, '2016-05-04 10:04:50'),
+(7, 'Inversiones 154 C.A', 'V-17955911-4', 'pedroperez@gmail.com', '00584125541104', 'Pedro Perez', '00584264011816', 'jalfonzo4', 'kq8ibu75*uDHulh', 1, 1, '2016-05-04 10:06:32'),
+(8, 'Coraz&oacute;n de Jes&uacute;s S.A', 'G-19446720-2', 'probandoando@gmail.com', '00584125541104', 'Milagro L&oacute;pez', '00584265558993', 'mlopez', 'djjvAtxHIqhrqmB', 0, 1, '2016-05-04 12:52:28');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `m_grupo`
+--
+
+CREATE TABLE `m_grupo` (
+  `m_grupo_id` int(4) NOT NULL,
+  `m_grupo_nombre` varchar(100) NOT NULL,
+  `m_grupo_descripcion` varchar(255) NOT NULL,
+  `m_grupo_status` varchar(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `m_grupo`
+--
+
+INSERT INTO `m_grupo` (`m_grupo_id`, `m_grupo_nombre`, `m_grupo_descripcion`, `m_grupo_status`) VALUES
+(1, 'Super Admin', 'El super administrador del sistema, para privilegios de administración de modulos', 'A');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `m_ofertas`
+--
+
+CREATE TABLE `m_ofertas` (
+  `m_oferta_id` int(11) NOT NULL,
+  `m_oferta_titulo` varchar(256) COLLATE latin1_general_cs NOT NULL,
+  `m_oferta_descripcion` longtext COLLATE latin1_general_cs NOT NULL,
+  `m_oferta_num_cupones` int(11) NOT NULL,
+  `m_oferta_precio_real` varchar(255) COLLATE latin1_general_cs NOT NULL,
+  `m_categoria_id` int(11) NOT NULL,
+  `m_oferta_fecha_inicio` datetime NOT NULL,
+  `m_oferta_fecha_fin` datetime NOT NULL,
+  `m_oferta_precio_venta` decimal(10,0) NOT NULL,
+  `m_oferta_porcentaje_descuento` varchar(30) COLLATE latin1_general_cs NOT NULL,
+  `m_cliente_id` int(11) NOT NULL,
+  `m_oferta_foto` varchar(255) COLLATE latin1_general_cs NOT NULL,
+  `m_oferta_foto2` varchar(255) COLLATE latin1_general_cs NOT NULL,
+  `m_titulo` varchar(255) COLLATE latin1_general_cs NOT NULL,
+  `m_descripcion` longtext COLLATE latin1_general_cs NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_cs;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `m_permiso`
+--
+
+CREATE TABLE `m_permiso` (
+  `m_permiso_id` int(4) NOT NULL,
+  `m_grupo_id` int(4) NOT NULL,
+  `m_seccion_id` int(4) NOT NULL,
+  `m_accion_id` int(100) NOT NULL,
+  `m_permiso_status` varchar(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `m_permiso`
+--
+
+INSERT INTO `m_permiso` (`m_permiso_id`, `m_grupo_id`, `m_seccion_id`, `m_accion_id`, `m_permiso_status`) VALUES
+(1, 1, 1, 1, 'SI'),
+(2, 1, 1, 2, 'SI'),
+(3, 1, 1, 4, 'SI'),
+(4, 1, 1, 3, 'SI'),
+(5, 1, 2, 1, 'SI'),
+(6, 1, 2, 2, 'SI'),
+(7, 1, 2, 3, 'SI'),
+(8, 1, 2, 4, 'SI');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `m_seccion`
+--
+
+CREATE TABLE `m_seccion` (
+  `m_seccion_id` int(4) NOT NULL,
+  `m_seccion_nombre` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `m_seccion_descripcion` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `m_seccion`
+--
+
+INSERT INTO `m_seccion` (`m_seccion_id`, `m_seccion_nombre`, `m_seccion_descripcion`) VALUES
+(1, 'Clientes', 'Para la gestión y registro de clientes'),
+(2, 'Categorias', 'Para ingresar las categorías en las que se puede publicar');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `m_usuario`
+--
+
+CREATE TABLE `m_usuario` (
+  `m_usuario_id` int(4) NOT NULL,
+  `m_usuario_login` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `m_usuario_password` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `m_usuario_nombre` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `m_usuario_apellido` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `m_grupo_id` int(4) NOT NULL,
+  `m_usuario_status` varchar(3) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `m_usuario_correo` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `m_usuario`
+--
+
+INSERT INTO `m_usuario` (`m_usuario_id`, `m_usuario_login`, `m_usuario_password`, `m_usuario_nombre`, `m_usuario_apellido`, `m_grupo_id`, `m_usuario_status`, `m_usuario_correo`) VALUES
+(1, 'jalfonzo', 'a35400f5d75488e299037db1895d2ee8', 'Jesús', 'Alfonzo', 1, 'A', 'jesushalfonzo@gmail.com'),
+(2, 'milagrotle', '6c5d50e7e28bf5b4319fa47c58e0483a', 'Milagro ', 'López', 1, 'A', 'milagrotle@gmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `m_ventas`
+--
+
+CREATE TABLE `m_ventas` (
+  `m_venta_id` int(11) NOT NULL,
+  `m_oferta_id` int(11) NOT NULL,
+  `m_cliente_id` int(11) NOT NULL,
+  `m_venta_num_cupones` int(4) NOT NULL,
+  `m_venta_fecha` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_cs;
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `bitacora_acceso`
+--
+ALTER TABLE `bitacora_acceso`
+  ADD PRIMARY KEY (`b_acceso_id`);
+
+--
+-- Indices de la tabla `m_acciones`
+--
+ALTER TABLE `m_acciones`
+  ADD PRIMARY KEY (`m_acciones_id`);
+
+--
+-- Indices de la tabla `m_categorias`
+--
+ALTER TABLE `m_categorias`
+  ADD PRIMARY KEY (`m_categoria_id`);
+
+--
+-- Indices de la tabla `m_clientes`
+--
+ALTER TABLE `m_clientes`
+  ADD PRIMARY KEY (`m_cliente_id`);
+
+--
+-- Indices de la tabla `m_grupo`
+--
+ALTER TABLE `m_grupo`
+  ADD PRIMARY KEY (`m_grupo_id`);
+
+--
+-- Indices de la tabla `m_ofertas`
+--
+ALTER TABLE `m_ofertas`
+  ADD PRIMARY KEY (`m_oferta_id`),
+  ADD KEY `idcliente` (`m_cliente_id`),
+  ADD KEY `idcategoria` (`m_categoria_id`);
+ALTER TABLE `m_ofertas` ADD FULLTEXT KEY `m_titulo` (`m_titulo`,`m_descripcion`);
+
+--
+-- Indices de la tabla `m_permiso`
+--
+ALTER TABLE `m_permiso`
+  ADD PRIMARY KEY (`m_permiso_id`),
+  ADD KEY `grupoid` (`m_grupo_id`),
+  ADD KEY `accionid` (`m_accion_id`),
+  ADD KEY `seccionid` (`m_seccion_id`);
+
+--
+-- Indices de la tabla `m_seccion`
+--
+ALTER TABLE `m_seccion`
+  ADD PRIMARY KEY (`m_seccion_id`);
+
+--
+-- Indices de la tabla `m_usuario`
+--
+ALTER TABLE `m_usuario`
+  ADD PRIMARY KEY (`m_usuario_id`),
+  ADD KEY `idgrupo` (`m_grupo_id`);
+
+--
+-- Indices de la tabla `m_ventas`
+--
+ALTER TABLE `m_ventas`
+  ADD PRIMARY KEY (`m_venta_id`),
+  ADD KEY `idcliente1` (`m_cliente_id`),
+  ADD KEY `idoferta` (`m_oferta_id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `bitacora_acceso`
+--
+ALTER TABLE `bitacora_acceso`
+  MODIFY `b_acceso_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+--
+-- AUTO_INCREMENT de la tabla `m_acciones`
+--
+ALTER TABLE `m_acciones`
+  MODIFY `m_acciones_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT de la tabla `m_categorias`
+--
+ALTER TABLE `m_categorias`
+  MODIFY `m_categoria_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT de la tabla `m_clientes`
+--
+ALTER TABLE `m_clientes`
+  MODIFY `m_cliente_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT de la tabla `m_grupo`
+--
+ALTER TABLE `m_grupo`
+  MODIFY `m_grupo_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT de la tabla `m_ofertas`
+--
+ALTER TABLE `m_ofertas`
+  MODIFY `m_oferta_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `m_permiso`
+--
+ALTER TABLE `m_permiso`
+  MODIFY `m_permiso_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT de la tabla `m_seccion`
+--
+ALTER TABLE `m_seccion`
+  MODIFY `m_seccion_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT de la tabla `m_usuario`
+--
+ALTER TABLE `m_usuario`
+  MODIFY `m_usuario_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT de la tabla `m_ventas`
+--
+ALTER TABLE `m_ventas`
+  MODIFY `m_venta_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `m_ofertas`
+--
+ALTER TABLE `m_ofertas`
+  ADD CONSTRAINT `idcategoria` FOREIGN KEY (`m_categoria_id`) REFERENCES `m_categorias` (`m_categoria_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `idcliente` FOREIGN KEY (`m_cliente_id`) REFERENCES `m_clientes` (`m_cliente_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Filtros para la tabla `m_permiso`
+--
+ALTER TABLE `m_permiso`
+  ADD CONSTRAINT `accionid` FOREIGN KEY (`m_accion_id`) REFERENCES `m_acciones` (`m_acciones_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `grupoid` FOREIGN KEY (`m_grupo_id`) REFERENCES `m_grupo` (`m_grupo_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `seccionid` FOREIGN KEY (`m_seccion_id`) REFERENCES `m_seccion` (`m_seccion_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Filtros para la tabla `m_usuario`
+--
+ALTER TABLE `m_usuario`
+  ADD CONSTRAINT `idgrupo` FOREIGN KEY (`m_grupo_id`) REFERENCES `m_grupo` (`m_grupo_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Filtros para la tabla `m_ventas`
+--
+ALTER TABLE `m_ventas`
+  ADD CONSTRAINT `idcliente1` FOREIGN KEY (`m_cliente_id`) REFERENCES `m_clientes` (`m_cliente_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `idoferta` FOREIGN KEY (`m_oferta_id`) REFERENCES `m_ofertas` (`m_oferta_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

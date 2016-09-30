@@ -1,0 +1,19 @@
+#register-right{
+	float: right;
+	padding-bottom: 20px;
+
+}
+#register-left{
+	float: left;
+	margin-left: 25px;
+	vertical-align: left;
+
+}
+
+
+.body-s {
+	max-width: 400px;
+}
+@media screen and (max-width: 600px) {
+
+}
